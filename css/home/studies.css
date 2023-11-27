@@ -1,0 +1,43 @@
+.caseStudies{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: grid;
+    text-align: center;
+    gap: 60px;
+}
+.introducao-studies h1{
+    margin-bottom: 15px;
+}
+.introducao-studies > p{
+    max-width: 60ch;
+    margin: 0 auto;
+}
+.informacoes-studies{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    text-align: start;
+}
+.text-studies{
+    gap: 20px;
+}
+
+.text-studies p{
+    max-width: 52ch;
+}
+.informacoes-studies img{
+    border-radius: 8px;
+}
+
+@media(max-width: 720px){
+    .informacoes-studies img{
+        display: none;
+    }
+    .informacoes-studies{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .informacoes-studies .botao{
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,127 @@
+.header-bg{
+    background-color: #080808;
+}
+.nav-primaria{
+    background-color: #1B1B1B;
+    color: #9C9C9C;
+    height: 80px;
+}
+.nav-primaria h1{
+    display: none;
+}
+.lista-primaria{
+    display: flex;
+    padding: 32px;
+    justify-content: space-around;
+}
+.lista-primaria a{
+    margin-bottom: 5px;
+    padding: 2px;
+}
+
+.lista-primaria a:hover{
+    color: white;
+    border-bottom: 0px solid white;
+    transition: .2s ease;
+}
+.sociais{
+    display: flex;
+    gap: 20px;
+    font-size: 1.2rem;
+}
+#btn-mobile{
+    display: none;
+
+  }
+
+
+
+  @media(max-width:600px){
+    .nav-primaria{
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .nav-primaria h1{
+        display: block;
+    }
+    .lista-primaria{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      position: absolute;
+      width: 350px;
+      top: 50px;
+      height: 0px;
+      left: -13px;
+      background-color: #1B1B1B;
+      transition: .3s;
+      z-index: 1000;
+      visibility: hidden;
+      overflow-y: hidden;
+    }
+
+    .nav-primaria.ativo .lista-primaria{
+  
+        height: calc(250px - 38px);
+        visibility: visible;
+        overflow-y: auto;
+
+    }
+    .lista-primaria a{
+        margin: 0 1rem;
+        border-bottom: 2px solid #424242b9;
+    }
+    .lista-primaria a:hover{
+        color: white;
+        background-color: #9c9c9c77;
+        transition: .2s ease;
+    }
+
+    #btn-mobile{
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        color: white;
+    }
+    #hamburguer{
+        border-top: 2px solid white;
+        width: 20px;
+        display: block;
+     
+    }
+    #hamburguer::after, #hamburguer::before{
+        content: "";
+        display: block;
+        width: 20px;
+        height: 2px;
+        margin-top: 5px;
+        position: relative;
+        background: currentColor;
+        transition: .2s;
+    }
+    .nav-primaria.ativo #hamburguer{
+        border-top-color: transparent;
+
+  }
+  .nav-primaria.ativo #hamburguer::before{
+    transform: rotate(135deg);
+    background-color: red;
+  }
+  .nav-primaria.ativo #hamburguer::after{
+    transform: rotate(-135deg);
+    background-color: red;
+    top: -7px;
+  }
+
+}
+
+@media (max-width: 400px){
+    .lista-primaria{
+        width: 200px;
+    }
+}

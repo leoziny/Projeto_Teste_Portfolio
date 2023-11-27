@@ -1,0 +1,72 @@
+.ativo-lista{
+    transition: .3s ease-in;
+    color: white;
+    border-bottom:  2px solid white;
+}
+.js .js-scroll{
+    opacity: 0;
+    transition: .7s;
+}
+
+.js .js-scroll.esquerda{
+    transform: translate3d(-80px, 0, 0);
+   
+
+}
+
+.js .js-scroll.esquerda.ativado{
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+
+}
+.js .js-scroll.direita{
+  
+    transform: translate3d(80px, 0, 0);
+
+}
+
+.js .js-scroll.direita.ativado{
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+
+}
+
+.js .js-scroll.cima{
+    transform: translate3d(0, -50px, 0);
+}
+
+.js .js-scroll.cima.ativado{
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+
+}
+
+@media (max-width:600px) {
+    .js .js-scroll.direita{
+  
+        transform: translate3d(20px, 0, 0);
+    
+    }
+    
+.js .js-scroll.esquerda{
+    transform: translate3d(-20px, 0, 0);
+   
+
+}
+
+}
+
+@media (max-width:400px) {
+    .js .js-scroll.direita{
+  
+        transform: translate3d(10px, 0, 0);
+    
+    }
+    
+.js .js-scroll.esquerda{
+    transform: translate3d(-10px, 0, 0);
+   
+
+}
+
+}

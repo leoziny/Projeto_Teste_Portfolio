@@ -1,0 +1,43 @@
+.recent-work{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    
+}
+
+.recent-informacoes{
+    text-align: center;
+    margin: 0 auto;
+    max-width: 80ch;
+}
+.recent-informacoes h1{
+    margin-bottom: 10px;
+}
+.recent-informacoes p{
+    margin-bottom: 50px;
+}
+.trabalhos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.informacoes-trabalhos{
+    gap: 15px;
+}
+.informacoes-trabalhos img{
+    border-radius: 8px;
+}
+.informacoes-trabalhos p {
+    margin-bottom: 10px;
+    max-width: 50ch;
+}
+@media (max-width: 720px){
+    .trabalhos{
+        margin: 0 auto;
+        grid-template-columns: 1fr;
+    }
+    .informacoes-trabalhos, .informacoes-trabalhos .botao{
+        text-align: center;
+        margin: 0 auto;
+    }
+}

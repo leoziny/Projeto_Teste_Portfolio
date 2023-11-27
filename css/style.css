@@ -1,0 +1,15 @@
+@import url(global/header.css);
+@import url(global/footer.css);
+@import url(global/global.css);
+
+@import url(home/introducao.css);
+@import url(home/studies.css);
+@import url(home/testemunhas.css);
+@import url(home/recent-work.css);
+@import url(home/get-intouch.css);
+
+
+@import url(util/componentes.css);
+@import url(util/cores.css);
+@import url(util/tipografia.css);
+@import url(util/classesJs.css);

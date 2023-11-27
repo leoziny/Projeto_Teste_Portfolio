@@ -1,0 +1,68 @@
+.testemunhas-bg{
+    background-color: #080808;
+
+}
+.testemunhas{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: grid;
+    text-align: center;
+    gap: 60px;
+}
+.informacoes-testemunhas h1{
+    margin-bottom: 15px;
+}
+.informacoes-testemunhas p {
+    max-width: 70ch;
+    margin: 0 auto;
+}
+.testemunhas-relato{
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(2, 1fr);
+}
+.relatos{
+  gap: 40px;
+  padding: 40px;
+  border: 2px solid #484848; 
+  border-radius: 6px;
+  justify-content: space-around;
+  width: 500px;
+  position: relative;
+}
+.aspas{
+    position: absolute;
+    font-size: 7rem;
+    top: -35px;
+    color: rgb(209, 149, 20);
+}
+.relatos p, .pessoa{
+    max-width: 50ch;
+}
+.pessoa{
+    position: relative;
+}
+.pessoa  > img{
+    position: absolute;
+    top: -20px;
+    left: 0;
+}
+.pessoa span{
+    text-align: left;
+    margin-left: 60px;
+}
+@media (max-width: 720px){
+    .testemunhas-relato{
+        grid-template-columns: 1fr;
+    }
+    .relatos{
+        width: 300px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 600px){
+    .relatos{
+        width: 250px;
+    }
+}
